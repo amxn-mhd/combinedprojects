@@ -1,0 +1,19 @@
+<div  class="container m-5">
+    <div  class="row">
+        <div *ngFor="let employee of employees" class="col-md-3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{employee.photoPath}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{employee.name}}</h5>
+                <p class="card-text">Gender: {{ employee.gender }}</p>
+                <p class="card-text">Email : {{employee.email}}</p>
+                <p class="card-text">Phone Number : {{employee.phoneNumber}}</p>
+                <p class="card-text">Contact Preference : {{employee.contactPreference}}</p>
+                <p class="card-text">Date of Birth : {{employee.dateOfBirth}}</p>
+                <p class="card-text">Department : {{employee.department}}</p>
+                <p class="card-text">Activity Status : {{employee.isActive}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
